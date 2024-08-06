@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Richiesoft | Start</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+</head>
+<body class="homepage" onload="updateIndicator()" ononline="updateIndicator()" onoffline="updateIndicator()">
+
+
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Inner -->
+        <div class="inner">
+            <!-- <header> -->
+
+            <h3>YO! FASHION</h3><br>
+            <p><span id="indicator"></span></p><br>
+
+            <img src="images/loading_bar.gif"><br><br>
+            <h6>Ensuring you have<br>got Internet connectivity,<br>Click Proceed to continue.</h6>
+            <br><br>
+            <!--
+             <hr \>
+
+             <p>Make sure to connect <br>to Internet and click<br> start button to proceed</p><br> -->
+            <a href="http://magazines.magpoke.com/magazines/fashion/clothing/english/4k/html5/" class="button circled scrolly">Proceed</a>
+
+            <!--
+            <p>Incase of white <br>screen, restart app</p>
+                 -->
+            <!--
+             </header>
+             <footer>
+
+             </footer> -->
+            <br><br>
+        </div>
+
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script>
+            function updateIndicator() {
+                document.getElementById('indicator').textContent = navigator.onLine ? '' : 'Uh-Oh ! Connect to Internet :(';
+            }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.onvisible.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
